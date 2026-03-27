@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | NepMountainer Resort</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header scrolled">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">▲</span>
+                <span class="logo-text">NepMountainer</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="experiences.html">Experiences</a>
+                <a href="app.html">App</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a href="app.html" class="download-link">Download App</a>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <button class="mobile-toggle">☰</button>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="app.html">App</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="btn btn-primary">Book Now</a>
+    </div>
+    <div class="overlay"></div>
+
+    <main class="booking-page">
+        <section class="booking-hero">
+            <div class="container">
+                <h1>Reserve Your Stay</h1>
+                <p>Experience luxury in the heart of the Himalayas.</p>
+            </div>
+        </section>
+
+        <section class="booking-section">
+            <div class="container">
+                <div class="booking-card">
+                    <div id="success-message" class="success-message" style="display: none;">
+                        Booking Successful! We will contact you shortly.
+                    </div>
+                    
+                    <form id="booking-form" novalidate>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" id="full-name" name="fullName" placeholder="Enter your full name">
+                                <span class="error-text" id="error-full-name"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address">
+                                <span class="error-text" id="error-email"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                                <span class="error-text" id="error-phone"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="room-type">Room Type</label>
+                                <select id="room-type" name="roomType">
+                                    <option value="">Select a room type</option>
+                                    <option value="Single Bedroom">Single Bedroom</option>
+                                    <option value="Double Bedroom">Double Bedroom</option>
+                                    <option value="Deluxe Bedroom">Deluxe Bedroom</option>
+                                </select>
+                                <span class="error-text" id="error-room-type"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="check-in">Check-in Date</label>
+                                <input type="date" id="check-in" name="checkIn">
+                                <span class="error-text" id="error-check-in"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="check-out">Check-out Date</label>
+                                <input type="date" id="check-out" name="checkOut">
+                                <span class="error-text" id="error-check-out"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <input type="number" id="guests" name="guests" min="1" value="1">
+                                <span class="error-text" id="error-guests"></span>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address" placeholder="Enter your full address">
+                                <span class="error-text" id="error-address"></span>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="special-requests">Special Requests</label>
+                                <textarea id="special-requests" name="specialRequests" rows="4" placeholder="Any special requests or preferences?"></textarea>
+                                <span class="error-text" id="error-special-requests"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-submit">Book Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <span class="logo-icon">▲</span>
+                        <span class="logo-text">NepMountainer</span>
+                    </div>
+                    <p>Experience the ultimate luxury in the heart of the Himalayas. Our resort combines traditional Nepali hospitality with modern comfort.</p>
+                    <div class="social-links">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">i</a>
+                        <a href="#">y</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li>Pokhara, Nepal</li>
+                        <li>+977 61-123456</li>
+                        <li>info@nepmountainer.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit" class="btn btn-primary">Go</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NepMountainer Resort. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

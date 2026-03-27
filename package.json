@@ -1,0 +1,10 @@
+{
+  "name": "nepmountainer-resort",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx -y serve -p 3000 .",
+    "build": "mkdir -p dist && cp *.html dist/ && cp -r css js dist/",
+    "lint": "echo 'No linting configured for this static site.'"
+  }
+}
